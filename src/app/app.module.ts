@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PatternSelectorComponent } from './pattern-selector/pattern-selector.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PatternSelectorComponent
   ],
   imports: [
     BrowserModule,
