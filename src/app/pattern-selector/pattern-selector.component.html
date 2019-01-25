@@ -1,0 +1,11 @@
+<table class=buttons>
+  <tr>
+    <td class="rowName">
+      <p>{{name}}</p>
+    </td>
+    <td *ngFor="let option of options; let i=index" >
+      <button [class.selected]="option === buttonSelected" (click)="chooseOption(option)">{{option}}</button>
+    </td>
+  </tr>
+</table>
+

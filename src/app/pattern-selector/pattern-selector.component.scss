@@ -1,0 +1,33 @@
+button{
+  background-color: lightskyblue;
+  border: 1px lightskyblue solid;
+  height:40px;
+  font-size: 12px;
+  border-radius: 5px;
+  color: white;
+}
+
+.buttons {
+  width: 100%;
+  table-layout: fixed;
+  background-color: rgb(226, 248, 255);
+}
+
+.rowName{
+  width: 100px;
+  text-align: center;
+  color: black;
+}
+
+.buttons button {
+  width: 100%;
+}
+
+table, th {
+  border: 1px solid white;
+}
+
+.selected{
+  background: black;
+  color: red;
+}
