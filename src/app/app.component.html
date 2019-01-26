@@ -1,6 +1,6 @@
-<h1>
+<div id="title">
   Rethinking the Big Patterns 2.0
-</h1>
+</div>
 
 <app-pattern-selector name="Pattern" [options]="patternOptions" (optionPicked)="optionPicked($event)"></app-pattern-selector>
 <app-pattern-selector name="Stance" [options]="stanceOptions" (optionPicked)="optionPicked($event)"></app-pattern-selector>
@@ -10,7 +10,7 @@
 <app-pattern-selector name="Duration" [options]="durationOptions" (optionPicked)="optionPicked($event)"></app-pattern-selector>
 
 <button (click)="getExercises()">Find exercises</button>
-<div *ngIf="foundExercise" id="exercise">
-  Exercise: {{foundExercise.name}}
+<div id="exercise">
+  Exercise: <p *ngIf="foundExercise" >{{foundExercise.name}}</p>
 </div>
 

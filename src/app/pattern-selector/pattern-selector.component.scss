@@ -1,16 +1,20 @@
 button{
-  background-color: lightskyblue;
-  border: 1px lightskyblue solid;
+  background-color: white;
+  border: 1px solid red;
   height:40px;
   font-size: 12px;
   border-radius: 5px;
-  color: white;
+  color: darkred;
+}
+
+button:hover{
+  background: lightgray;
 }
 
 .buttons {
   width: 100%;
   table-layout: fixed;
-  background-color: rgb(226, 248, 255);
+  background-color: rgba(224, 224, 224, 0.26);
 }
 
 .rowName{
@@ -30,4 +34,9 @@ table, th {
 .selected{
   background: black;
   color: red;
+}
+
+.selected:hover{
+  background: black !important;
+  color: red !important;
 }
