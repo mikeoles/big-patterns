@@ -124,8 +124,8 @@ export class AppComponent implements OnInit {
         this.foundExercise = exercise;
       }
   });
-   if (!this.foundExercise) {
-     alert('No exercise found matching these conditions');
-   }
+  if (!this.foundExercise) {
+    alert('No exercise found matching these conditions');
+  }
   }
 }

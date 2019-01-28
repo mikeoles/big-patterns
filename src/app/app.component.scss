@@ -3,11 +3,17 @@ button{
   background-color: black;
   border: 2px red solid;
   color:  red;
-  margin: 5px 5px;
-  width: calc(100% - 10px);
+  margin: 30px auto 0px auto;
+  width: 70%;
   height: 55px;
   font-size: 18px;
   font-weight: bold;
+  display: block;
+}
+
+button:hover{
+  background-color: red;
+  color: black;
 }
 
 #title{

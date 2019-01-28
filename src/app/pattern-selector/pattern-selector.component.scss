@@ -4,6 +4,7 @@ button{
   height:40px;
   font-size: 12px;
   border-radius: 5px;
+  font-weight: bold;
   color: darkred;
 }
 
@@ -39,4 +40,8 @@ table, th {
 .selected:hover{
   background: black !important;
   color: red !important;
+}
+
+p{
+  font-weight: 800;
 }
