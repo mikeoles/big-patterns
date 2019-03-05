@@ -1,17 +1,1 @@
-<div id="title">
-  Rethinking The Big Patterns 2.0
-</div>
-
-<app-pattern-selector name="Pattern" [options]="patternOptions" (optionPicked)="optionPicked($event)"></app-pattern-selector>
-<app-pattern-selector name="Stance" [options]="stanceOptions" (optionPicked)="optionPicked($event)"></app-pattern-selector>
-<app-pattern-selector name="Plane" [options]="planeOptions" (optionPicked)="optionPicked($event)"></app-pattern-selector>
-<app-pattern-selector name="Load" [options]="loadOptions" (optionPicked)="optionPicked($event)"></app-pattern-selector>
-<app-pattern-selector name="Velocity" [options]="veclocityOptions" (optionPicked)="optionPicked($event)"></app-pattern-selector>
-<app-pattern-selector name="Duration" [options]="durationOptions" (optionPicked)="optionPicked($event)"></app-pattern-selector>
-
-<button (click)="getExercises()">Find exercises</button>
-<div id="exercise">
-  <div *ngIf="!foundExercise" > Exercise </div>
-  <div *ngIf="foundExercise" >{{foundExercise.name}}</div>
-</div>
-
+<router-outlet></router-outlet>
