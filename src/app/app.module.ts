@@ -9,6 +9,7 @@ import { ExerciseSearchComponent } from './workout-analyzer/exercise-search/exer
 import { ExerciseLogComponent } from './workout-analyzer/exercise-log/exercise-log.component';
 import { AnalysisComponent } from './workout-analyzer/analysis/analysis.component';
 import { ExerciseFinderComponent } from './exercise-finder/exercise-finder.component';
+import { PatternGraphComponent } from './workout-analyzer/analysis/pattern-graph/pattern-graph.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ExerciseFinderComponent } from './exercise-finder/exercise-finder.compo
     ExerciseSearchComponent,
     ExerciseLogComponent,
     AnalysisComponent,
-    ExerciseFinderComponent
+    ExerciseFinderComponent,
+    PatternGraphComponent
   ],
   imports: [
     BrowserModule,
