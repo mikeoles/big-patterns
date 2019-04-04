@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WorkoutAnalyzerComponent implements OnInit {
 
+  chosenExerciseId: number;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  exerciseClicked(exerciseId: number) {
+    this.chosenExerciseId = exerciseId;
   }
 
 }

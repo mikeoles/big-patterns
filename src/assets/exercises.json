@@ -1,0 +1,74 @@
+{
+    "Exercises": [
+        {
+            "exerciseId": 1,
+            "exerciseName": "90/90 Hip Lift With Right Heel Tap",
+            "pattern": "Core Pelvis",
+            "stance": "Asymmetrical Front/Back",
+            "plane": "Sagittal",
+            "load": "Low",
+            "velocity": "Low",
+            "duration": "Moderate"
+        },
+        {
+            "exerciseId": 2,
+            "exerciseName": "Adductor Draw Back",
+            "pattern": "Core Pelvis",
+            "stance": "Bilateral Symmetrical",
+            "plane": "Frontal",
+            "load": "Low",
+            "velocity": "Low",
+            "duration": "Moderate"
+        },
+        {
+            "exerciseId": 3,
+            "exerciseName": "Heavy Barbell Deadlift",
+            "pattern": "Hip Dominant",
+            "stance": "Bilateral Symmetrical",
+            "plane": "Sagittal",
+            "load": "High",
+            "velocity": "Low",
+            "duration": "Short"
+        },
+        {
+            "exerciseId": 4,
+            "exerciseName": "Split Squat With Hip Shift",
+            "pattern": "Knee Dominant",
+            "stance": "Asymmetrical Front/Back",
+            "plane": "Frontal",
+            "load": "Moderate",
+            "velocity": "Moderate",
+            "duration": "Short"
+        },
+        {
+            "exerciseId": 5,
+            "exerciseName": "Slideboard - 5 Minutes",
+            "pattern": "Change Of Direction",
+            "stance": "Asymmetrical Lateral",
+            "plane": "Frontal",
+            "load": "Low",
+            "velocity": "Moderate",
+            "duration": "Long"
+        },
+        {
+            "exerciseId": 6,
+            "exerciseName": "Rotational Medball Throw",
+            "pattern": "Throwing",
+            "stance": "Asymmetrical Lateral",
+            "plane": "Transverse",
+            "load": "Moderate",
+            "velocity": "High",
+            "duration": "Short"
+        },
+        {
+            "exerciseId": 7,
+            "exerciseName": "Jacob's Ladder - 10 Minutes",
+            "pattern": "Locomotion",
+            "stance": "Asymmetrical Front/Back",
+            "plane": "Sagittal",
+            "load": "Low",
+            "velocity": "Low",
+            "duration": "Long"
+        }
+    ]
+}

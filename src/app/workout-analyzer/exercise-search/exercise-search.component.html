@@ -1,2 +1,5 @@
 <div class="title">Search</div>
-<!-- https://www.npmjs.com/package/ng2-search-filter -->
+<input class="searchBar" type="text" placeholder="Exercise Name" [(ngModel)]="term">
+<div class="searchResults">
+    <div class="searchResult" *ngFor="let exercise of exercises" (click)="chooseExercise(exercise.exerciseId)">{{exercise.exerciseName}}</div>
+</div>

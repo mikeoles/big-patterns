@@ -10,3 +10,20 @@
   text-align: center;
 }
 
+.searchBar{
+  display: block;
+  margin: auto;
+}
+
+.searchResult:hover{
+  background-color: gainsboro;
+  cursor: pointer;
+}
+
+.searchResults{
+  width: 500px;
+  display: block;
+  margin: auto;
+  text-align: center;
+  border: 2px solid black;
+}

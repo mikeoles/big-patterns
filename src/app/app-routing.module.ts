@@ -7,7 +7,7 @@ const routes: Routes = [
   { path: 'analyze', component: WorkoutAnalyzerComponent },
   { path: 'find', component: ExerciseFinderComponent },
   { path: '',
-  redirectTo: '/find',
+  redirectTo: '/analyze',
   pathMatch: 'full'
 },
 ];

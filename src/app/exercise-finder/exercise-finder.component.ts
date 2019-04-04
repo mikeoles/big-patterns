@@ -28,7 +28,8 @@ export class ExerciseFinderComponent implements OnInit {
     this.exercises = [];
     this.exercises.push(
       {
-        name: 'Split Squat W/ Hip Shift',
+        exerciseId: 1,
+        exerciseName: 'Split Squat W/ Hip Shift',
         pattern: 'Knee Dominant',
         stance: 'Asymmetrical Front/Back',
         plane: 'Frontal',
@@ -39,7 +40,8 @@ export class ExerciseFinderComponent implements OnInit {
     );
     this.exercises.push(
       {
-        name: '90/90 Hip Lift w/Right Heel Tap',
+        exerciseId: 2,
+        exerciseName: '90/90 Hip Lift w/Right Heel Tap',
         pattern: 'Core Pelvis',
         stance: 'Asymmetrical Front/Back',
         plane: 'Sagittal',
@@ -50,7 +52,8 @@ export class ExerciseFinderComponent implements OnInit {
     );
     this.exercises.push(
       {
-        name: 'Adductor Draw Back',
+        exerciseId: 3,
+        exerciseName: 'Adductor Draw Back',
         pattern: 'Core Pelvis',
         stance: 'Bilateral Symmetrical',
         plane: 'Frontal',
@@ -61,7 +64,8 @@ export class ExerciseFinderComponent implements OnInit {
     );
     this.exercises.push(
       {
-        name: '90% Barbell Deadlift',
+        exerciseId: 4,
+        exerciseName: '90% Barbell Deadlift',
         pattern: 'Hip Dominant',
         stance: 'Bilateral Symmetrical',
         plane: 'Sagittal',
@@ -73,7 +77,8 @@ export class ExerciseFinderComponent implements OnInit {
 
     this.exercises.push(
       {
-        name: '5 Minute Slideboard',
+        exerciseId: 5,
+        exerciseName: '5 Minute Slideboard',
         pattern: 'Change Of Direction',
         stance: 'Asymmetrical Lateral',
         plane: 'Frontal',
@@ -84,7 +89,8 @@ export class ExerciseFinderComponent implements OnInit {
     );
     this.exercises.push(
       {
-        name: 'Rotational Medball Throw',
+        exerciseId: 6,
+        exerciseName: 'Rotational Medball Throw',
         pattern: 'Throwing',
         stance: 'Asymmetrical Lateral',
         plane: 'Transverse',
@@ -95,7 +101,8 @@ export class ExerciseFinderComponent implements OnInit {
     );
     this.exercises.push(
       {
-        name: 'Jacobs Ladder, 10 Minutes',
+        exerciseId: 7,
+        exerciseName: 'Jacobs Ladder, 10 Minutes',
         pattern: 'Locomotion',
         stance: 'Asymmetrical Front/Back',
         plane: 'Sagittal',
@@ -110,7 +117,7 @@ export class ExerciseFinderComponent implements OnInit {
   }
 
   optionPicked(option) {
-   this.appliedSorting.set(option.patternName, option.patternUsed);
+   this.appliedSorting.set(option.patternexerciseName, option.patternUsed);
   }
 
   getExercises() {
@@ -131,7 +138,6 @@ export class ExerciseFinderComponent implements OnInit {
   }
 
   goToAnalyzer() {
-    alert("here");
     this.router.navigate(['analyze/']);
   }
 }

@@ -1,5 +1,6 @@
 export default class Exercise {
-  name: string;
+  exerciseId: number;
+  exerciseName: string;
   pattern: string;
   stance: string;
   load: string;

@@ -1,1 +1,17 @@
 <div class="title">Exercise Log</div>
+<table>
+    <thead>
+        <th class="exerciseNameColumn">Exercise Name</th>
+        <th>Reps</th>
+        <th>Sets</th>
+        <th>Load</th>
+        <td></td>
+    </thead>
+    <tr class="row" *ngFor="let exercise of loggedExercises; let i = index">
+        <td class="exerciseNameColumn">{{exercise.exerciseName}}</td>
+        <td><input></td>
+        <td><input></td>
+        <td><input></td>
+        <td class="delete" (click)="removeExercise(i)">delete</td>
+    </tr>
+</table>

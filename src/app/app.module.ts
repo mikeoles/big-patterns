@@ -10,6 +10,10 @@ import { ExerciseLogComponent } from './workout-analyzer/exercise-log/exercise-l
 import { AnalysisComponent } from './workout-analyzer/analysis/analysis.component';
 import { ExerciseFinderComponent } from './exercise-finder/exercise-finder.component';
 import { PatternGraphComponent } from './workout-analyzer/analysis/pattern-graph/pattern-graph.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +28,10 @@ import { PatternGraphComponent } from './workout-analyzer/analysis/pattern-graph
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    Ng2SearchPipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

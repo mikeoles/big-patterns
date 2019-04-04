@@ -10,3 +10,28 @@
 .title{
   text-align: center;
 }
+
+table{
+  display: block;
+  margin: auto;
+  width: 45vw;
+}
+
+th, td{
+  width: 5vw;
+}
+
+.exerciseNameColumn{
+  width: 25vw;
+}
+
+input{
+  display: block;
+  margin: auto;
+  width: 30px;
+}
+
+.delete{
+  color: red;
+  cursor: pointer;
+}
