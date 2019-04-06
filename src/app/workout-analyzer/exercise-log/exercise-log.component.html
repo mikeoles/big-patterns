@@ -9,9 +9,9 @@
     </thead>
     <tr class="row" *ngFor="let exercise of loggedExercises; let i = index">
         <td class="exerciseNameColumn">{{exercise.exerciseName}}</td>
-        <td><input></td>
-        <td><input></td>
-        <td><input></td>
+        <td><input (change)="changeTotals(i)" id="{{'reps_'+i}}" type="number"></td>
+        <td><input (change)="changeTotals(i)" id="{{'sets_'+i}}" type="number"></td>
+        <td><input (change)="changeTotals(i)" id="{{'load_'+i}}" type="number"></td>
         <td class="delete" (click)="removeExercise(i)">delete</td>
     </tr>
 </table>

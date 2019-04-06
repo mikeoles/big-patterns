@@ -35,4 +35,8 @@ export class ExerciseLogComponent implements OnInit, OnChanges {
     this.loggedExercises.splice(index, 1);
   }
 
+  changeTotals(index: number) {
+    alert('change: ' + index);
+  }
+
 }
