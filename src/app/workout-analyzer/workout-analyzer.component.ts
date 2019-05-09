@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class WorkoutAnalyzerComponent implements OnInit {
 
   chosenExerciseId: number;
+  exerciseLogVolumes: Map<number, number>;
 
   constructor() { }
 
@@ -16,6 +17,10 @@ export class WorkoutAnalyzerComponent implements OnInit {
 
   exerciseClicked(exerciseId: number) {
     this.chosenExerciseId = exerciseId;
+  }
+
+  exerciseLogData(exerciseVolumes: Map<number, number>) {
+    this.exerciseLogVolumes = exerciseVolumes;
   }
 
 }

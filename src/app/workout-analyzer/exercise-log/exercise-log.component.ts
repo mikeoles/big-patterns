@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, SimpleChanges, OnChanges } from '@angular/core';
+import { Component, OnInit, Input, SimpleChanges, OnChanges, EventEmitter, Output } from '@angular/core';
 import Exercise from 'src/app/exercise.model';
 import { ApiService } from 'src/app/api.service';
 
@@ -10,6 +10,7 @@ import { ApiService } from 'src/app/api.service';
 export class ExerciseLogComponent implements OnInit, OnChanges {
 
   @Input() chosenExerciseId: number;
+  @Output() exerciseLogData = new EventEmitter();
   loggedExercises: Exercise[] = [];
   exerciseList: Exercise[];
 
@@ -35,8 +36,18 @@ export class ExerciseLogComponent implements OnInit, OnChanges {
     this.loggedExercises.splice(index, 1);
   }
 
-  changeTotals(index: number) {
-    alert('change: ' + index);
+  runAnalysis() {
+    const exerciseVolumes = new Map<number, number>();
+    for (let i = 0; i < this.loggedExercises.length; i++) {
+      let exerciseTotalVolume = Number((<HTMLInputElement>document.getElementById('reps_' + i)).value);
+      exerciseTotalVolume *= Number((<HTMLInputElement>document.getElementById('sets_' + i)).value);
+      exerciseTotalVolume *= Number((<HTMLInputElement>document.getElementById('load_' + i)).value);
+      if (exerciseVolumes.has(this.loggedExercises[i].exerciseId)) {
+        exerciseTotalVolume += exerciseVolumes.get(this.loggedExercises[i].exerciseId);
+      }
+      exerciseVolumes.set(this.loggedExercises[i].exerciseId, exerciseTotalVolume);
+    }
+    this.exerciseLogData.emit(exerciseVolumes);
   }
 
 }

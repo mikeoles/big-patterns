@@ -46,3 +46,20 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance:textfield; /* Firefox */
 }
+
+#analyzeButton {
+  background-color: white;
+  border: 1px solid black;
+  height:40px;
+  font-size: 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+}
+
+#analyzeButton:hover{
+  background: lightgray;
+}
