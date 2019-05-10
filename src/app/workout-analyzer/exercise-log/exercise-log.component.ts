@@ -37,15 +37,15 @@ export class ExerciseLogComponent implements OnInit, OnChanges {
   }
 
   runAnalysis() {
-    const exerciseVolumes = new Map<number, number>();
+    const exerciseVolumes = new Map<Exercise, number>();
     for (let i = 0; i < this.loggedExercises.length; i++) {
       let exerciseTotalVolume = Number((<HTMLInputElement>document.getElementById('reps_' + i)).value);
       exerciseTotalVolume *= Number((<HTMLInputElement>document.getElementById('sets_' + i)).value);
       exerciseTotalVolume *= Number((<HTMLInputElement>document.getElementById('load_' + i)).value);
-      if (exerciseVolumes.has(this.loggedExercises[i].exerciseId)) {
-        exerciseTotalVolume += exerciseVolumes.get(this.loggedExercises[i].exerciseId);
+      if (exerciseVolumes.has(this.loggedExercises[i])) {
+        exerciseTotalVolume += exerciseVolumes.get(this.loggedExercises[i]);
       }
-      exerciseVolumes.set(this.loggedExercises[i].exerciseId, exerciseTotalVolume);
+      exerciseVolumes.set(this.loggedExercises[i], exerciseTotalVolume);
     }
     this.exerciseLogData.emit(exerciseVolumes);
   }

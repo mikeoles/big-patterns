@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/internal/operators/map';
 import Exercise from './exercise.model';
@@ -8,18 +8,10 @@ import Exercise from './exercise.model';
   providedIn: 'root'
 })
 export class ApiService implements ApiService {
-  getExercise(exerciseId: number): Exercise {
-    let matchingExercise: Exercise = null;
-    this.http.get('../assets/exercises.json').pipe(
-        map<any, Exercise[]>(exercises => exercises.Exercises.map(exercise => this.createExercise(exercise))),
-    ).subscribe(ex => {
-        ex.forEach(e => {
-            if (e.exerciseId === exerciseId) {
-                matchingExercise = e;
-            }
-        });
-    });
-    return matchingExercise;
+  getExercise(exerciseId: number): Observable<Exercise> {
+    return this.http.get('../assets/exercises.json').pipe(
+        map<any, Exercise>(exercises => exercises.Exercises.find(exercise => exercise.exerciseId === exerciseId )),
+    );
   }
 
   constructor(private http: HttpClient) {}

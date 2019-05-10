@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import Exercise from '../exercise.model';
 
 @Component({
   selector: 'app-workout-analyzer',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class WorkoutAnalyzerComponent implements OnInit {
 
   chosenExerciseId: number;
-  exerciseLogVolumes: Map<number, number>;
+  exerciseLogVolumes: Map<Exercise, number>;
 
   constructor() { }
 
@@ -19,7 +20,7 @@ export class WorkoutAnalyzerComponent implements OnInit {
     this.chosenExerciseId = exerciseId;
   }
 
-  exerciseLogData(exerciseVolumes: Map<number, number>) {
+  exerciseLogData(exerciseVolumes: Map<Exercise, number>) {
     this.exerciseLogVolumes = exerciseVolumes;
   }
 

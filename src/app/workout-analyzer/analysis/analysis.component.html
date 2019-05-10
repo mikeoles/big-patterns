@@ -1,7 +1,9 @@
 <div class="title">Analysis</div>
-<app-pattern-graph [title]="'Pattern'"></app-pattern-graph>
-<app-pattern-graph [title]="'Stance'"></app-pattern-graph>
-<app-pattern-graph [title]="'Plane'"></app-pattern-graph>
-<app-pattern-graph [title]="'Load'"></app-pattern-graph>
-<app-pattern-graph [title]="'Velocity'"></app-pattern-graph>
-<app-pattern-graph [title]="'Duration'"></app-pattern-graph>
+<div id="container">
+    <div><app-pattern-graph [title]="'Pattern'" [data]="patternsVolume"></app-pattern-graph></div>
+    <div><app-pattern-graph [title]="'Stance'" [data]="stanceVolume"></app-pattern-graph></div>
+    <div><app-pattern-graph [title]="'Plane'" [data]="planeVolume"></app-pattern-graph></div>
+    <div><app-pattern-graph [title]="'Load'" [data]="loadVolume"></app-pattern-graph></div>
+    <div><app-pattern-graph [title]="'Velocity'" [data]="velocityVolume"></app-pattern-graph></div>
+    <div><app-pattern-graph [title]="'Duration'" [data]="durationVolume"></app-pattern-graph></div>
+</div>
