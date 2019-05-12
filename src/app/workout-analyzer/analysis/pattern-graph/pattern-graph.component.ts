@@ -1,4 +1,6 @@
 import { Component, OnInit, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { ChartType, ChartDataSets, ChartOptions } from 'chart.js';
+import { Label } from 'ng2-charts';
 
 @Component({
   selector: 'app-pattern-graph',
@@ -9,8 +11,26 @@ export class PatternGraphComponent implements OnInit, OnChanges {
 
   @Input() title: string;
   @Input() data: Map<string, number>;
-  categories: string[];
-  loadValues: number[];
+  public barChartData: ChartDataSets[] = [];
+  public barChartLabels: Label[] = [this.title];
+  public barChartOptions: ChartOptions = {
+    responsive: true,
+    scales: {
+      xAxes: [{
+        display: false,
+        categoryPercentage: 1.0,
+        barPercentage: 1.0,
+      }],
+      yAxes: [{
+        display: false,
+        ticks: {
+          beginAtZero: true,
+        },
+      }],
+    },
+  };
+  public barChartType: ChartType = 'bar';
+  public barChartLegend = true;
 
   constructor() { }
 
@@ -18,8 +38,12 @@ export class PatternGraphComponent implements OnInit, OnChanges {
 
   ngOnChanges(changes: SimpleChanges) {
     if (changes['data']) {
-      this.categories = Array.from(this.data.keys());
-      this.loadValues = Array.from(this.data.values());
+      this.barChartData = [];
+      Array.from(this.data.keys()).forEach(element => {
+        this.barChartData = this.barChartData.concat(
+          { data: [this.data.get(element)], label: element }
+        );
+      });
     }
 
   }

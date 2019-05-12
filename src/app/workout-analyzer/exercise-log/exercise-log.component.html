@@ -12,7 +12,7 @@
         <td><input id="{{'reps_'+i}}" type="number"></td>
         <td><input id="{{'sets_'+i}}" type="number"></td>
         <td><input id="{{'load_'+i}}" type="number"></td>
-        <td class="delete" (click)="removeExercise(i)">delete</td>
+        <td class="delete" (click)="removeExercise(i)">X</td>
     </tr>
 </table>
 <button id="analyzeButton" (click)="runAnalysis()" *ngIf="loggedExercises.length > 0">Analyze</button>

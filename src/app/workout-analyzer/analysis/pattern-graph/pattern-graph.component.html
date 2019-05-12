@@ -1,3 +1,8 @@
-<div *ngFor="let value of loadValues; let i=index" >{{value}}</div>
-<div *ngFor="let category of categories; let i=index" >{{category}}</div>
+<canvas baseChart
+[datasets]="barChartData"
+[labels]="barChartLabels"
+[options]="barChartOptions"
+[legend]="barChartLegend"
+[chartType]="barChartType">
+</canvas>
 <div class="title">{{title}}</div>

@@ -1,9 +1,9 @@
 <div class="title">Analysis</div>
 <div id="container">
-    <div><app-pattern-graph [title]="'Pattern'" [data]="patternsVolume"></app-pattern-graph></div>
-    <div><app-pattern-graph [title]="'Stance'" [data]="stanceVolume"></app-pattern-graph></div>
-    <div><app-pattern-graph [title]="'Plane'" [data]="planeVolume"></app-pattern-graph></div>
-    <div><app-pattern-graph [title]="'Load'" [data]="loadVolume"></app-pattern-graph></div>
-    <div><app-pattern-graph [title]="'Velocity'" [data]="velocityVolume"></app-pattern-graph></div>
-    <div><app-pattern-graph [title]="'Duration'" [data]="durationVolume"></app-pattern-graph></div>
+    <div><app-pattern-graph *ngIf="patternsVolume" [title]="'Pattern'" [data]="patternsVolume"></app-pattern-graph></div>
+    <div><app-pattern-graph *ngIf="patternsVolume" [title]="'Stance'" [data]="stanceVolume"></app-pattern-graph></div>
+    <div><app-pattern-graph *ngIf="patternsVolume" [title]="'Plane'" [data]="planeVolume"></app-pattern-graph></div>
+    <div><app-pattern-graph *ngIf="patternsVolume" [title]="'Load'" [data]="loadVolume"></app-pattern-graph></div>
+    <div><app-pattern-graph *ngIf="patternsVolume" [title]="'Velocity'" [data]="velocityVolume"></app-pattern-graph></div>
+    <div><app-pattern-graph *ngIf="patternsVolume" [title]="'Duration'" [data]="durationVolume"></app-pattern-graph></div>
 </div>

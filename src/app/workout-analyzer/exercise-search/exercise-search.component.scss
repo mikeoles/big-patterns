@@ -1,18 +1,28 @@
 :host{
-  border: 1px solid black;
-  position: absolute;
-  float: left;
-  height: calc(50vh - 2px);
-  width: calc(50vw - 2px);
+  width: 50%;
+  height: 40%; 
+  float: left; 
+  background: lightcyan;
 }
 
 .title{
   text-align: center;
+  font-weight: 900;
 }
 
-.searchBar{
+.searchBar {
+  width: 30%;
+  border: 1px solid #00B4CC;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
   display: block;
-  margin: auto;
+  margin: 5px auto;
+}
+
+.searchBar:focus{
+  border: 3px solid #00B4CC;
 }
 
 .searchResult:hover{
