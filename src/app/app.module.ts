@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { ChartsModule } from 'ng2-charts';
+import { MainPageComponent } from './main-page/main-page.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ChartsModule } from 'ng2-charts';
     ExerciseLogComponent,
     AnalysisComponent,
     ExerciseFinderComponent,
-    PatternGraphComponent
+    PatternGraphComponent,
+    MainPageComponent
   ],
   imports: [
     BrowserModule,

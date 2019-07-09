@@ -69,6 +69,36 @@
             "load": "Low",
             "velocity": "Low",
             "duration": "Long"
+        },
+        {
+            "exerciseId": 8,
+            "exerciseName": "Half Kneeling Windmill W/ Rear Foot on Wall",
+            "pattern": "Throwing",
+            "stance": "Asymmetrical Front/Back",
+            "plane": "Fontal",
+            "load": "Moderate",
+            "velocity": "Low",
+            "duration": "Short"
+        },
+        {
+            "exerciseId": 9,
+            "exerciseName": "Half Kneeling Windmill",
+            "pattern": "Throwing",
+            "stance": "Asymmetrical Front/Back",
+            "plane": "Fontal",
+            "load": "Moderate",
+            "velocity": "Low",
+            "duration": "Short"
+        },
+        {
+            "exerciseId": 10,
+            "exerciseName": "Split Squat",
+            "pattern": "Throwing",
+            "stance": "Asymmetrical Front/Back",
+            "plane": "Fontal",
+            "load": "Moderate",
+            "velocity": "Low",
+            "duration": "Short"
         }
     ]
 }
